@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	background-image: url("../images/pattern-background-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	font-family: 'Red Hat Display', sans-serif;
+	background-color: hsl(225, 100%, 94%);
+	display: grid;
+	place-items: center;
+}
+.component {
+	width: 500px;
+	/* height: 800px; */
+	background-color: white;
+	overflow: hidden;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.component > img {
+	width: 100%;
+}
+.component .content {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	gap: 20px;
+}
+.component .info {
+	text-align: center;
+	margin: 40px 0;
+}
+.component .info h2 {
+	color: hsl(223, 47%, 23%);
+	font-size: 30px;
+}
+.component .info p {
+	color: hsl(224, 23%, 55%);
+	font-size: 18px;
+	line-height: 1.8;
+	width: 330px;
+	margin: 20px auto 0;
+}
+.component .pricing {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 30px;
+}
+.component .pricing .price {
+	display: flex;
+	gap: 20px;
+}
+.component .pricing .price img {
+	width: 57px;
+}
+.component .pricing .price .text > p:first-of-type {
+	font-weight: 900;
+	font-size: 20px;
+	color: hsl(223, 47%, 23%);
+}
+.component .pricing .price .text > p:last-of-type {
+	color: hsl(224, 23%, 55%);
+	font-size: 20px;
+	margin-top: 5px;
+}
+.component .pricing > a {
+	text-decoration: none;
+	color: #483285;
+	font-weight: bold;
+}
+.component .content button {
+	width: calc(100% - 60px);
+	background-color: #483285;
+	border: none;
+	margin: 20px 30px 0;
+	padding: 10px 20px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+.component .content button:hover {
+	cursor: pointer;
+}
+.component .content > p:last-of-type {
+	text-align: center;
+	color: hsl(223, 47%, 23%);
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+.component .content > p:last-of-type:hover {
+	cursor: pointer;
+}
